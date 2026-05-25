@@ -1,1 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+    --color-bg: #f5f3ef;
+
+    --color-rose-50: #fdf2f6;
+    --color-rose-100: #fbe8ef;
+    --color-rose-200: #fad0e0;
+    --color-rose-300: #f7aac5;
+    --color-rose-400: #f0769f;
+    --color-rose-500: #ea638c;
+    --color-rose-600: #d62c57;
+    --color-rose-700: #b91d40;
+    --color-rose-800: #991b36;
+    --color-rose-900: #801b30;
+    --color-rose-950: #4e0917;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.shapes {
+    background:
+        conic-gradient(
+            from -45deg at calc(100% / 3) calc(100% / 3),
+            #fdf2f6 90deg,
+            #0000 0
+        ),
+        conic-gradient(
+            from -135deg at calc(100% / 3) calc(2 * 100% / 3),
+            #fdf2f6 90deg,
+            #fbe8ef 0 135deg,
+            #0000 0
+        ),
+        conic-gradient(
+            from 135deg at calc(2 * 100% / 3) calc(2 * 100% / 3),
+            #fdf2f6 90deg,
+            #fbe8ef 0 135deg,
+            #0000 0
+        ),
+        conic-gradient(
+            from 45deg at calc(2 * 100% / 3) calc(100% / 3),
+            #fdf2f6 90deg,
+            #fbe8ef 0 135deg,
+            #0000 0,
+            #fdf2f6 0 225deg,
+            #fbe8ef 0
+        );
+    background-size: 40px 40px;
+}
