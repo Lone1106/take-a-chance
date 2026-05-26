@@ -1,25 +1,30 @@
 import { signal } from "@preact/signals";
 
+import ProgressBar from "./components/ProgressBar";
 import StartingScreen from "./components/StartingScreen";
 import LetsStart from "./components/LetsStart";
 import PickDate from "./components/PickDate";
 import PickActivtiy from "./components/PickActivity";
 import End from "./components/End";
+import Thanks from "./components/Thanks";
 
 export const step = signal(0);
+export const maxSteps = signal(5);
 export const answerData = signal({ date: "", time: "", activity: "" });
 
 export function App() {
   return (
-    <div className="h-svh flex items-center justify-stretch shapes">
+    <div className="h-svh flex items-center justify-stretch dots bg-black text-white">
       <h1 className="sr-only">Take a chance date appointment maker</h1>
-      <div className="px-4 md:px-6 mx-auto max-w-6xl w-full">
-        <div className="bg-white border-2 border-rose-700 rounded-3xl p-10 md:p-16">
+      <div className="px-4 md:px-6 mx-auto max-w-3xl w-full">
+        <div className="bg-black-900 border border-white/15 rounded-3xl p-10 md:p-16 relative overflow-hidden">
+          <ProgressBar />
           <StartingScreen />
           <LetsStart />
           <PickDate />
           <PickActivtiy />
           <End />
+          <Thanks />
         </div>
       </div>
     </div>

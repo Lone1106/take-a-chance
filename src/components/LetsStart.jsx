@@ -12,12 +12,12 @@ export default function LetsStart() {
         className="size-44 mx-auto block mb-8 rounded-xl object-cover"
       />
       <div>
-        <h2 className="text-center text-4xl md:text-5xl text-rose-700">
+        <h2 className="text-center text-4xl text-rose-700">
           Ok, das ist jetzt irgendwie unerwartet.
         </h2>
-        <p className="text-center md:max-w-lg md:mx-auto opacity-50 mt-8">
+        <p className="text-center md:max-w-lg md:mx-auto opacity-70 tracking-wide mt-3 leading-relaxed">
           Eigentlich bin ich es nicht gewohnt so weit zu kommen. Aber ich war ja
-          auch schon überrascht als du beim ersten mal akzeptiert hattest.
+          auch schon überrascht, dass du das erste Mal akzeptiert hattest.
         </p>
       </div>
 

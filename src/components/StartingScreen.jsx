@@ -10,13 +10,13 @@ export default function StartingScreen() {
         src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHhiOWc3dXdkbmttZDM4dXNyZjRlZ3dvZWx1d3BkdjM1dGs1NWV0bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vVegyymxA90fkY8jkE/giphy.gif"
         alt="Katze klatscht mit Pfoten auf Tisch"
         loading="lazy"
-        className="size-44 mx-auto block mb-4 rounded-xl object-cover"
+        className="size-32 mx-auto block mb-8 rounded-xl object-cover"
       />
-      <h2 className="text-center text-4xl md:text-5xl text-rose-700">
+      <h2 className="text-4xl text-rose-700">
         Darf ich dich nochmal ausführen?
       </h2>
 
-      <div className="mt-12 flex gap-2 items-center justify-center">
+      <div className="mt-12 flex gap-4 items-center justify-center">
         <ButtonPrimary text="Yesss" />
         <ButtonSecondary text="Haha, nein" />
       </div>

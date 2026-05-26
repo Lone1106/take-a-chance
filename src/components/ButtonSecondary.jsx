@@ -28,7 +28,7 @@ export default function ButtonSecondary({ text }) {
             }
           : {}
       }
-      className="rounded-full px-5 py-2 text-rose-700 bg-rose-200 uppercase cursor-pointer"
+      className="rounded-full text-sm px-5 py-2.5 border-[0.5px] border-white cursor-pointer opacity-20"
     >
       {text}
     </button>

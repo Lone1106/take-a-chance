@@ -1,6 +1,6 @@
-export default function Activity({ icon, text }) {
+export default function Activity({ icon, text, info }) {
   return (
-    <label className="text-center">
+    <label>
       <input
         type="radio"
         name="activity"
@@ -8,10 +8,13 @@ export default function Activity({ icon, text }) {
         required
         className="peer sr-only"
       />
-      <div className="flex items-center justify-center h-full rounded-2xl p-4 md:p-8 bg-rose-200 text-rose-700 hover:text-rose-200 hover:bg-rose-700 focus-within:text-rose-200 focus-within:bg-rose-700 peer-checked:text-rose-200! peer-checked:bg-rose-700! transition cursor-pointer">
-        <div>
-          <span className="text-4xl block mb-2">{icon}</span>
-          {text}
+      <div className="h-full rounded-xl p-4 transition cursor-pointer border border-white/25 bg-black peer-hover:bg-black-900 peer-focus-within:bg-black-900 peer-checked:bg-rose-700! flex flex-col justify-center">
+        <div className="flex items-center justify-start gap-2">
+          <span>{icon}</span>
+          <span className="inline-flex flex-wrap items-center justify-start gap-2 md:gap-px">
+            {text}{" "}
+            {info && <span className="text-[10px] opacity-50">({info})</span>}
+          </span>
         </div>
       </div>
     </label>

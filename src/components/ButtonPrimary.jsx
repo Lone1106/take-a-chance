@@ -1,4 +1,4 @@
-import { step } from "../app.jsx";
+import { step, maxSteps } from "../app.jsx";
 
 export default function ButtonPrimary({
   text,
@@ -7,7 +7,7 @@ export default function ButtonPrimary({
   disabled = false,
 }) {
   const handleClick = (e) => {
-    if (step.value < 4) {
+    if (step.value < maxSteps) {
       step.value += 1;
       func?.(e);
     }
@@ -18,7 +18,7 @@ export default function ButtonPrimary({
       type={type}
       onClick={handleClick}
       disabled={disabled}
-      className="disabled:opacity-50 rounded-full px-5 py-2 text-white bg-rose-700 uppercase disabled:cursor-not-allowed not-disabled:cursor-pointer transition duration-300 not-disabled:hover:bg-pink-600 not-disabled:hover:-translate-y-1.5 not-disabled:active:translate-0"
+      className="disabled:opacity-50 rounded-full text-sm px-5 py-2.5 text-white bg-rose-700 disabled:cursor-not-allowed not-disabled:cursor-pointer transition duration-300 not-disabled:hover:opacity-90 not-disabled:focus-within:opacity-90 not-disabled:opacity-100 border border-transparent"
     >
       {text}
     </button>

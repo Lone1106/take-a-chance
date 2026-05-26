@@ -30,26 +30,26 @@ export default function PickDate() {
         src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajR6NjFhd2ViMWM5NnNoZTIxanA1ZThiaDdkbjNmNXA0dHM5djhudSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ybr8ne38XHBTK366Xy/giphy.gif"
         alt="Penguin with calendar"
         loading="lazy"
-        className="size-44 mx-auto block mb-8 rounded-xl object-cover"
+        className="size-32 mx-auto block mb-8 rounded-xl object-cover"
       />
       <form onChange={checkValid} ref={formRef}>
-        <h2 className="text-center text-4xl md:text-5xl text-rose-700">
+        <h2 className="text-center text-4xl text-rose-700">
           Also....wann hast du Zeit?
         </h2>
-        <div className="md:mx-auto md:max-w-1/2 mt-8 grid grid-cols-1 gap-4">
+        <div className="md:mx-auto md:max-w-2/3 mt-8 grid grid-cols-1 gap-4">
           <label>
-            Datum:
+            <span className="opacity-50">Datum:</span>
             <input
-              className="block mt-2 border border-rose-700 rounded-full px-5 py-2 w-full"
+              className="block mt-2 border border-black/20 rounded-xl bg-white text-black/90 px-5 py-2 w-full invert"
               type="date"
               name="date"
               required
             />
           </label>
           <label>
-            Zeit:
+            <span className="opacity-50">Zeit:</span>
             <input
-              className="block mt-2 border border-rose-700 rounded-full px-5 py-2 w-full"
+              className="block mt-2 border border-black/20 rounded-xl bg-white text-black/90 px-5 py-2 w-full invert"
               type="time"
               name="time"
               required
