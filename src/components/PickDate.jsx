@@ -37,19 +37,19 @@ export default function PickDate() {
           Also....wann hast du Zeit?
         </h2>
         <div className="md:mx-auto md:max-w-2/3 mt-8 grid grid-cols-1 gap-4">
-          <label>
+          <label className="block">
             <span className="opacity-50">Datum:</span>
             <input
-              className="block mt-2 border border-black/20 rounded-xl bg-white text-black/90 px-5 py-2 w-full invert"
+              className="block mt-2 border border-black/20 rounded-xl bg-white text-black/90 px-5 py-2 invert w-full max-w-[85%] md:max-w-none"
               type="date"
               name="date"
               required
             />
           </label>
-          <label>
+          <label className="block">
             <span className="opacity-50">Zeit:</span>
             <input
-              className="block mt-2 border border-black/20 rounded-xl bg-white text-black/90 px-5 py-2 w-full invert"
+              className="block mt-2 border border-black/20 rounded-xl bg-white text-black/90 px-5 py-2 invert w-full max-w-[85%] md:max-w-none"
               type="time"
               name="time"
               required
