@@ -14,18 +14,16 @@ export const answerData = signal({ date: "", time: "", activity: "" });
 
 export function App() {
   return (
-    <div className="h-svh flex items-center justify-stretch dots bg-black text-white">
+    <div className="min-h-svh p-4 flex items-center justify-stretch dots bg-black text-white">
       <h1 className="sr-only">Take a chance date appointment maker</h1>
-      <div className="px-4 md:px-6 mx-auto max-w-3xl w-full">
-        <div className="bg-black-900 border border-white/15 rounded-3xl p-10 md:p-16 relative overflow-hidden">
-          <ProgressBar />
-          <StartingScreen />
-          <LetsStart />
-          <PickDate />
-          <PickActivtiy />
-          <End />
-          <Thanks />
-        </div>
+      <div className="bg-black-900 border border-white/15 rounded-3xl p-10 md:p-16 relative overflow-hidden mx-auto max-w-3xl w-full">
+        <ProgressBar />
+        <StartingScreen />
+        <LetsStart />
+        <PickDate />
+        <PickActivtiy />
+        <End />
+        <Thanks />
       </div>
     </div>
   );

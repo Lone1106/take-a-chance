@@ -8,7 +8,7 @@ export default function StartingScreen() {
     <div className={`text-center ${step.value !== 0 ? "hidden" : "block"}`}>
       <img
         src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHhiOWc3dXdkbmttZDM4dXNyZjRlZ3dvZWx1d3BkdjM1dGs1NWV0bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vVegyymxA90fkY8jkE/giphy.gif"
-        alt="Katze klatscht mit Pfoten auf Tisch"
+        alt="Cat clapping paws on desk fast"
         loading="lazy"
         className="size-32 mx-auto block mb-8 rounded-xl object-cover"
       />

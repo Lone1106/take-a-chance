@@ -24,8 +24,8 @@ export default function End() {
   return (
     <div className={`${step.value !== 4 ? "hidden" : "block"}`}>
       <img
-        src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWI4YW8yem5zM2hvM2p6ZWs3dGJwYmI2bWQzOWhnNnRxOGtraXBkMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vOfvpTX1imciKVZfai/giphy.gif"
-        alt="Wednesday you are dismissed"
+        src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXpoZXRvYXd3c2NyZjN6YTEzMmZ6eHZianF1YWgxdjFjYXMyZ252aiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LsdO5RziEq4Zu5XVVn/giphy.gif"
+        alt="Pengu happy confetti"
         loading="lazy"
         className="size-32 mx-auto block mb-8 rounded-xl object-cover"
       />
