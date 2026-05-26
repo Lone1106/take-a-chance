@@ -9,6 +9,8 @@ export default function PickDate() {
   const formRef = useRef(null);
   const disabled = useSignal(true);
 
+  const minDate = new Date().toISOString().split("T")[0];
+
   const buttonFunc = (e) => {
     e.preventDefault();
     answerData.value = {
@@ -43,17 +45,40 @@ export default function PickDate() {
               className="block mt-2 border border-black/20 rounded-xl bg-white text-black/90 px-5 py-2 invert w-full max-w-[85%] md:max-w-none"
               type="date"
               name="date"
+              min={minDate}
               required
             />
           </label>
           <label className="block">
             <span className="opacity-50">Zeit:</span>
-            <input
-              className="block mt-2 border border-black/20 rounded-xl bg-white text-black/90 px-5 py-2 invert w-full max-w-[85%] md:max-w-none"
-              type="time"
-              name="time"
-              required
-            />
+            <div className="relative  max-w-[85%] md:max-w-none">
+              <select
+                name="time"
+                required
+                className="appearance-none block mt-2 border border-black/20 rounded-xl bg-white text-black/90 px-5 py-2 invert w-full"
+              >
+                <option value="">Zeit auswählen</option>
+                {Array.from({ length: 13 }, (_, i) => i + 10).map((h) => (
+                  <option value={`${String(h).padStart(2, "0")}:00`}>
+                    {String(h).padStart(2, "0")}:00
+                  </option>
+                ))}
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="absolute right-4 md:right-5 top-1/2 -translate-y-1/2 size-6 pointer-events-none"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
           </label>
         </div>
         <div className="mt-12 flex gap-2 items-center justify-center">
